@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "mwis_weather_scraping"
+version = "0.1.0"
+description = "A simple tool to pull together information from https://www.mwis.org.uk/ and collate into a single place. The goal is to have a simple view on the best area of the highlands to travel to on a weekend!"
+authors = ["James Thurgood"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pandas = "^1.3.5"
+beautifulsoup4 = "^4.10.0"
+requests = "^2.26.0"
+
+[tool.poetry.dev-dependencies]
+pylint = "^2.12.2"
+pytest = "^6.2.5"
+black = "^21.12b0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
